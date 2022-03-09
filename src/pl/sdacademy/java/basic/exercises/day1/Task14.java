@@ -28,7 +28,6 @@ public class Task14 {
 
         fullCredit = FullCredit(amount,numberOfInstallments);
         instalment = Instalment(fullCredit,numberOfInstallments);
-
     }
 
     private static double VerifyAmount(double amount){
@@ -61,6 +60,7 @@ public class Task14 {
             return fullCredit = amount * PROCENT_3;
         }
     }
+
     private static double Instalment(double fullCredit, int numberOfInstallments){
         double instalment = fullCredit /numberOfInstallments;
         System.out.printf("Single instalment: %.2f", instalment);
